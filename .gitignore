@@ -7,3 +7,4 @@
 *.TMP
 logs
 Thumbs.db
+**/*.import

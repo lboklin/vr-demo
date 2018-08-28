@@ -1,0 +1,48 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://addons/vr-common/functions/Function_Force.gd" type="Script" id=1]
+
+[node name="Function_Force" type="Area"]
+transform = Transform( 1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 0, 0, 0 )
+input_ray_pickable = false
+input_capture_on_drag = false
+space_override = 0
+gravity_point = false
+gravity_distance_scale = 0.0
+gravity_vec = Vector3( 0, -1, 0 )
+gravity = 9.8
+linear_damp = 0.1
+angular_damp = 1.0
+priority = 1.0
+monitoring = true
+monitorable = false
+collision_layer = 4
+collision_mask = 3
+audio_bus_override = false
+audio_bus_name = "Master"
+reverb_bus_enable = false
+reverb_bus_name = "Master"
+reverb_bus_amount = 0.0
+reverb_bus_uniformity = 0.0
+script = ExtResource( 1 )
+_sections_unfolded = [ "Collision", "Transform" ]
+rumbling_enabled = null
+max_range = null
+cone_angle = null
+strength = null
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, -2.98023e-08, 0, 2.98023e-08, 1, 0, 2.95081e-16, -1.07401e-16 )
+shape = null
+disabled = false
+
+[node name="RayCast" type="RayCast" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.29911e-09, 1.11022e-16 )
+enabled = false
+exclude_parent = true
+cast_to = Vector3( 0, 0, -1 )
+collision_mask = 3
+collide_with_areas = false
+collide_with_bodies = true
+_sections_unfolded = [ "Transform" ]
+

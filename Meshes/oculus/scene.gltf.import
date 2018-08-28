@@ -7,10 +7,7 @@ path="res://.import/scene.gltf-e35241a5c39e1dfeb7c24f3d332c4aca.scn"
 [deps]
 
 source_file="res://Meshes/oculus/scene.gltf"
-source_md5="750b35d8dc24b5a523af0472672b266c"
-
 dest_files=[ "res://.import/scene.gltf-e35241a5c39e1dfeb7c24f3d332c4aca.scn" ]
-dest_md5="9d62daf3d46fcb834e0bf147850b3974"
 
 [params]
 
